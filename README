@@ -1,0 +1,4 @@
+Server:
+- on top project create a folder named server, cd server
+- feathers g app
+- git init
