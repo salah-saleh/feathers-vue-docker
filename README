@@ -9,3 +9,8 @@ Client:
 - from top level run npx @vue/cli create client
 - npm install feathers-vuex @feathersjs/feathers @feathersjs/socketio-client @feathersjs/authentication-client socket.io-client --save
 - follow instructions from https://feathers-plus.github.io/v1/feathers-vuex/
+- to serve: npm run serve
+
+Ref:
+- https://www.youtube.com/watch?v=DGPfCT5dDQE
+- https://github.com/niallobrien/feathers-chat-example
