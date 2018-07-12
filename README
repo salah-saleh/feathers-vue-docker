@@ -4,3 +4,6 @@ Server:
 - git init
 - add nodemon: cd server; npm i nodemon --save-dev
 - add it to package.json as dev
+
+Client:
+- from top level run npx @vue/cli create client
