@@ -5,6 +5,11 @@ services:
     expose:
       - "27017"
       - "37017"
+    environment:
+      - MONGO_DATA_DIR=/data/db
+      - MONGO_LOG_DIR=/dev/null      
+    volumes:
+      - ./server/data:/data/db:rw
     restart: always
     command: --smallfiles
   server:
