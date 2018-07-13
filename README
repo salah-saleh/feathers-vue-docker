@@ -5,6 +5,8 @@ Server:
 - add nodemon: cd server; npm i nodemon --save-dev
 - add it to package.json as dev
 
+- feathers g service => add messages. Better proceeded by defining the service in store.js as the scheme will be generated from there
+
 Client:
 - from top level run npx @vue/cli create client
 - npm install feathers-vuex @feathersjs/feathers @feathersjs/socketio-client @feathersjs/authentication-client socket.io-client --save
