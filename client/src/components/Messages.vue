@@ -5,15 +5,24 @@
     <ul>
       <li v-for="message in messages" :key="message._id">
         <span>{{ message.text }}</span>
-        <span @click="removeMessage(message)">x</span>
+        <paper-icon-button icon="icons:delete" @click="removeMessage(message)">x</paper-icon-button>
       </li>
     </ul>
   </div>
 </template>
 
+<style scoped>
+ul {
+  list-style-type: none;
+}
+</style>
+
+
 <script>
   // mapState, 
   import { mapGetters, mapActions } from 'vuex';
+  import '@polymer/paper-icon-button/paper-icon-button.js';
+  import '@polymer/iron-icons/iron-icons.js';
 
   export default {
     name: 'Messages',
